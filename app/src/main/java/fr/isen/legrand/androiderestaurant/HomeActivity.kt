@@ -8,30 +8,30 @@ import fr.isen.legrand.androiderestaurant.databinding.ActivityHomeBinding
 
 class HomeActivity : AppCompatActivity() {
 
-    private lateinit var blinding: ActivityHomeBinding
+    private lateinit var binding: ActivityHomeBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        blinding = ActivityHomeBinding.inflate(layoutInflater)
-        setContentView(blinding.root)
+        binding = ActivityHomeBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-       blinding.entrees.setOnClickListener {
-            val intent = Intent(this,entrees::class.java)
+        binding.entrees.setOnClickListener {
+            val intent = Intent(this, entrees::class.java)
+            intent.putExtra("categorie", entrees.CATEGORY_ENTREES)
             startActivity(intent)
-            // Gérer le clic du premier bouton ici
         }
 
-        blinding.plats.setOnClickListener {
-            val intent = Intent(this,entrees::class.java)
+        binding.plats.setOnClickListener {
+            val intent = Intent(this, entrees::class.java)
+            intent.putExtra("categorie", entrees.CATEGORY_PLATS)
             startActivity(intent)
-            // Gérer le clic du deuxième bouton ici
         }
 
-        blinding.desserts.setOnClickListener {
-            val intent = Intent(this,entrees::class.java)
+        binding.desserts.setOnClickListener {
+            val intent = Intent(this, entrees::class.java)
+            intent.putExtra("categorie", entrees.CATEGORY_DESSERTS)
             startActivity(intent)
-            // Gérer le clic du troisième bouton ici
         }
     }
 }

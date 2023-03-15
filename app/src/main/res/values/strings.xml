@@ -5,4 +5,32 @@
     <string name="plats">Plats</string>
     <string name="desserts">Desserts</string>
     <string name="mainimage">MainImage</string>
+
+    <array name="entrees">
+        <item>Salade de tomates</item>
+        <item>Velouté de potiron</item>
+        <item>Tartare de saumon</item>
+        <item>Salade de tomates</item>
+        <item>Velouté de potiron</item>
+        <item>Tartare de saumon</item>
+        <item>Salade de tomates</item>
+        <item>Velouté de potiron</item>
+        <item>Tartare de saumon</item>
+        <item>Salade de tomates</item>
+        <item>Velouté de potiron</item>
+        <item>Tartare de saumon</item>
+    </array>
+
+    <array name="plats">
+        <item>Steak-frites</item>
+        <item>Blanquette de veau</item>
+        <item>Poulet rôti</item>
+    </array>
+
+    <array name="desserts">
+        <item>Tarte aux pommes</item>
+        <item>Cheesecake</item>
+        <item>Crème brûlée</item>
+    </array>
+
 </resources>
