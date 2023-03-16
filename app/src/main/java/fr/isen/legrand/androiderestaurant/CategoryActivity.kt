@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 // Définition de la classe "entrees" qui étend la classe "AppCompatActivity"
-class entrees : AppCompatActivity() {
+class CategoryActivity : AppCompatActivity() {
 
     // Cette méthode est appelée lorsque l'activité est créée
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -55,4 +55,3 @@ class entrees : AppCompatActivity() {
         const val CATEGORY_DESSERTS = "desserts"
     }
 }
-

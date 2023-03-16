@@ -4,7 +4,6 @@ package fr.isen.legrand.androiderestaurant
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
 import fr.isen.legrand.androiderestaurant.databinding.ActivityHomeBinding
 
 // Définition de la classe "HomeActivity" qui étend la classe "AppCompatActivity"
@@ -23,20 +22,20 @@ class HomeActivity : AppCompatActivity() {
 
         // Définition des actions à effectuer lorsqu'on clique sur chaque bouton de catégorie
         binding.entrees.setOnClickListener {
-            val intent = Intent(this, entrees::class.java)
-            intent.putExtra("categorie", entrees.CATEGORY_ENTREES)
+            val intent = Intent(this, CategoryActivity::class.java)
+            intent.putExtra("categorie", CategoryActivity.CATEGORY_ENTREES)
             startActivity(intent)
         }
 
         binding.plats.setOnClickListener {
-            val intent = Intent(this, entrees::class.java)
-            intent.putExtra("categorie", entrees.CATEGORY_PLATS)
+            val intent = Intent(this, CategoryActivity::class.java)
+            intent.putExtra("categorie", CategoryActivity.CATEGORY_PLATS)
             startActivity(intent)
         }
 
         binding.desserts.setOnClickListener {
-            val intent = Intent(this, entrees::class.java)
-            intent.putExtra("categorie", entrees.CATEGORY_DESSERTS)
+            val intent = Intent(this, CategoryActivity::class.java)
+            intent.putExtra("categorie", CategoryActivity.CATEGORY_DESSERTS)
             startActivity(intent)
         }
     }
