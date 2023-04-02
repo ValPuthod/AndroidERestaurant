@@ -2,9 +2,9 @@
     <string name="app_name">AndroidERestaurant</string>
     <string name="home_title">Restaurante italiano</string>
     <string name="detail_plat_activity_label">Détails du plat</string>
-    <string name="entrees">Entrees</string>
+    <string name="entrees">Entrées</string>
     <string name="plats">Plats</string>
-    <string name="desserts">Desserts</string>
+    <string name="desserts">Dessert</string>
     <string name="mainimage">MainImage</string>
 
     <array name="entrees">
